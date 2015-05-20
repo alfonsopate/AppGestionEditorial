@@ -28,8 +28,8 @@ namespace AppGestionEditorial.Modelos
             this.investigacion = 1;
         }
 
-        public Cientificos(string nombre, string codigo, string autor, string editorial, string fechaDePublicacion, int investigacion) : 
-            base(nombre, codigo, autor, editorial, fechaDePublicacion)
+        public Cientificos(string nombre,  string autores, string editorial, string fechaDePublicacion, int investigacion) : 
+            base(nombre,  autores, editorial, fechaDePublicacion)
         {
             this.investigacion = investigacion;
         }

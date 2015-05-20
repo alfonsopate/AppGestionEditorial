@@ -28,8 +28,8 @@ namespace AppGestionEditorial.Modelos
             this.articulos = 1;
         }
 
-        public Revistas(string nombre, string codigo, string autor, string editorial, string fechaDePublicacion, int articulos): 
-            base(nombre, codigo, autor, editorial, fechaDePublicacion)
+        public Revistas(string titulo, string autores, string editorial, string fechaDePublicacion, int articulos): 
+            base(titulo, autores, editorial, fechaDePublicacion)
         {
             this.articulos = articulos;
         }

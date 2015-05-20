@@ -10,8 +10,7 @@ namespace AppGestionEditorial.Modelos
         #region "Atributos"
         private string titulo;
         private string fechaEdicion;
-        private string creadopor;
-        private string nuEdicion;
+        private string autores;
         private string editorial;
 
         #endregion
@@ -28,18 +27,11 @@ namespace AppGestionEditorial.Modelos
             get { return fechaEdicion; }
             set { fechaEdicion = value; }
         }
-        public string Creadopor
+        public string Autores
         {
-            get { return creadopor; }
-            set { creadopor = value; }
+            get { return autores; }
+            set { autores = value; }
         }
-
-        public string NuEdicion
-        {
-            get { return nuEdicion; }
-            set { nuEdicion = value; }
-        }
-
         public string Editorial
         {
             get { return editorial; }
@@ -53,18 +45,16 @@ namespace AppGestionEditorial.Modelos
         {
             this.titulo = "Titulo del Documento";
             this.fechaEdicion = "dd/mm/aaaa";
-            this.creadopor = "Autor:";
-            this.nuEdicion = "Numero de Edicion";
+            this.autores = "Autores:";
             this.editorial = "Editorial";
 
         }
 
-        public Documentos(string titulo, string fechaEdicion, string creadopor, string nuEdicion, string editorial)
+        public Documentos(string titulo, string fechaEdicion, string autores, string editorial)
         {
             this.titulo = titulo ;
             this.fechaEdicion = fechaEdicion;
-            this.creadopor = creadopor;
-            this.nuEdicion = nuEdicion;
+            this.autores = autores;
             this.editorial = editorial;
         }
         #endregion 
@@ -75,8 +65,7 @@ namespace AppGestionEditorial.Modelos
             return "\n_________________"+
                 "\n Titulo: " + this.titulo +
                 " \n Fecha de Edicion: "+ this.fechaEdicion +
-                "\n Autor: " + this.creadopor +
-                "\n Nuemero de Edicion: " + this.nuEdicion +
+                "\n Autores: " + this.autores +
                 "\n Editorial: " + this.editorial ;
         }
 
@@ -87,8 +76,7 @@ namespace AppGestionEditorial.Modelos
 
             if ((this.titulo == doc.titulo) &&
                 (this.fechaEdicion == doc.fechaEdicion) &&
-                (this.creadopor == doc.creadopor) &&
-                (this.nuEdicion == doc.nuEdicion) &&
+                (this.autores== doc.autores) &&
                 (this.editorial == doc.editorial))
 
                 result = true;

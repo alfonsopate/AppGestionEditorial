@@ -9,7 +9,7 @@ namespace AppGestionEditorial.Modelos
  {
         #region "Atributos"
         private int capitulos;
-
+        private string nuEdicion;
        
         #endregion
 
@@ -18,7 +18,12 @@ namespace AppGestionEditorial.Modelos
         {
             get { return capitulos; }
             set { capitulos = value; }
-        }        
+        }
+        public string NuEdicion
+        {
+            get { return nuEdicion; }
+            set { nuEdicion = value; }
+        }
         #endregion
 
         #region "Constructores"
@@ -26,12 +31,14 @@ namespace AppGestionEditorial.Modelos
         public Libros(): base()
         {
             this.capitulos = 1;
+            this.nuEdicion = "Numero de Edicion";
         }
 
-        public Libros(string nombre, string codigo, string autor, string editorial, string fechaDePublicacion, int capitulos): 
-            base(nombre, codigo, autor, editorial, fechaDePublicacion)
+        public Libros(string titulo, string fechaEdicion, string autores, string editorial, int capitulos, string nuEdicion) :
+            base(titulo, fechaEdicion, autores, editorial)
         {
             this.capitulos = capitulos;
+            this.nuEdicion = nuEdicion;
         }
         #endregion
 

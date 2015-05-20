@@ -68,7 +68,8 @@ namespace AppGestionEditorial.Modelos
     public override int GetHashCode()
     {
         return base.GetHashCode();
-    }
+    }
+
         #endregion
     }
 }

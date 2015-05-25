@@ -5,71 +5,19 @@ using System.Web;
 
 namespace AppGestionEditorial.Modelos
 {
-    public class Formato
+    public abstract class Formato
     {
         #region "Atributos"
-        private string tipo;
-        private string entrega;
+        public int codigo;
+        public string nombre;
+        public bool leer;
+        public bool guardar;
+        public bool imprimir;
+        public bool editar;
+        public bool escuchar;
+        public bool visualizar;
+        #endregion
 
         
-        #endregion
-
-        #region "Propiedades"
-        public string Tipo
-        {
-            get { return tipo; }
-            set { tipo = value; }
-        }
-        public string Entrega
-        {
-            get { return entrega; }
-            set { entrega = value; }
-        }
-        #endregion
-
-        #region "Constructores"
-
-        public  Formato()
-        {
-            this.tipo = "Tipo";
-            this.entrega = "Entrega";
-        }
-
-        public Formato(string tipo, string entrega)
-        {
-            this.tipo = tipo;
-            this.entrega =  entrega;
-        }
-
-        #endregion
-
-        #region "Constructores"
-    
-    public override string ToString()
-        {
-            return "\n______________________" +
-    "\n Tipo: " + this.tipo +
-    "\n Entrega: " + this.entrega ;
-
-
-        }
-
-    public override bool Equals(object obj)
-    {
-        Formato doc = (Formato)obj;
-        bool result = false;
-
-        if ((this.tipo == doc.tipo) &&
-            (this.entrega == doc.entrega))
-
-            result = true;
-        return result;
-    }
-    public override int GetHashCode()
-    {
-        return base.GetHashCode();
-    }
-
-        #endregion
     }
 }

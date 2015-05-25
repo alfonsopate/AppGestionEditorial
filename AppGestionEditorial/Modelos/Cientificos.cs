@@ -9,15 +9,15 @@ namespace AppGestionEditorial.Modelos
 
     {
    #region "Atributos"
-        private int investigacion;
+        private int tipo;
        
         #endregion
 
         #region "Propiedades"
-        public int Investigacion
+        public int Tipo
         {
-            get { return investigacion; }
-            set { investigacion = value; }
+            get { return tipo; }
+            set { tipo = value; }
         } 
         #endregion
 
@@ -25,13 +25,13 @@ namespace AppGestionEditorial.Modelos
         
         public Cientificos(): base()
         {
-            this.investigacion = 1;
+            this.tipo = 1;
         }
 
-        public Cientificos(string nombre,  string autores, string editorial, string fechaDePublicacion, int investigacion) : 
-            base(nombre,  autores, editorial, fechaDePublicacion)
+         public Cientificos(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, DateTime fechaedicion, DateTime fechapublicacion, int tipo)
+            : base( id, titulo , autores, idiomas,editorial,categoria, numeropaginas, fechaedicion, fechapublicacion)
         {
-            this.investigacion = investigacion;
+            this.tipo = tipo;
         }
         #endregion
 
@@ -39,7 +39,7 @@ namespace AppGestionEditorial.Modelos
         public override string ToString()
         {
             return base.ToString() +
-                "\n Investigacion: " + this.investigacion;
+                "\n tipo : " + this.tipo;
         }
 
         public override bool Equals(object obj)
@@ -48,7 +48,7 @@ namespace AppGestionEditorial.Modelos
             bool result = false;
 
             if ((base.Equals(doc)) &&
-                (this.investigacion == doc.investigacion))
+                (this.tipo == doc.tipo))
                 result = true;
             return result;
         }

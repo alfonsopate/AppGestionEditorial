@@ -9,7 +9,8 @@ namespace AppGestionEditorial.Modelos
  {
         #region "Atributos"
         private int capitulos;
-        private string nuEdicion;
+        private int nuEdicion;
+        private string nivel;
        
         #endregion
 
@@ -19,10 +20,15 @@ namespace AppGestionEditorial.Modelos
             get { return capitulos; }
             set { capitulos = value; }
         }
-        public string NuEdicion
+        public int NuEdicion
         {
             get { return nuEdicion; }
             set { nuEdicion = value; }
+        }
+        public string Nivel
+        {
+            get { return nivel; }
+            set { nivel = value; }
         }
         #endregion
 
@@ -30,15 +36,18 @@ namespace AppGestionEditorial.Modelos
         
         public Libros(): base()
         {
-            this.capitulos = 1;
-            this.nuEdicion = "Numero de Edicion";
+            this.capitulos = 2;
+            this.nuEdicion =2;
+            this.nivel = "nivel";
         }
 
-        public Libros(string titulo, string fechaEdicion, string autores, string editorial, int capitulos, string nuEdicion) :
-            base(titulo, fechaEdicion, autores, editorial)
+        public Libros(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, DateTime fechaedicion, DateTime fechapublicacion, int capitulos, int nuEdicion, string nivel)
+            : base( id, titulo , autores, idiomas,editorial,categoria, numeropaginas, fechaedicion, fechapublicacion)
         {
             this.capitulos = capitulos;
             this.nuEdicion = nuEdicion;
+            this.nivel = nivel;
+
         }
         #endregion
 
@@ -46,7 +55,9 @@ namespace AppGestionEditorial.Modelos
         public override string ToString()
         {
             return base.ToString() +
-                "\n Capitulos: " + this.capitulos;
+                "\n Numero de Capitulos: " + this.capitulos +
+                "\n Numero de Edicion: " + this.nuEdicion +
+                "\n Nivel:" + this.nivel;
         }
 
         public override bool Equals(object obj)
@@ -55,7 +66,9 @@ namespace AppGestionEditorial.Modelos
             bool result = false;
 
             if ((base.Equals(doc)) &&
-                (this.capitulos == doc.capitulos))
+                (this.capitulos == doc.capitulos) &&
+                (this.nuEdicion == doc.nuEdicion) &&
+                (this.nivel == doc.nivel))
                 result = true;
             return result;
         }

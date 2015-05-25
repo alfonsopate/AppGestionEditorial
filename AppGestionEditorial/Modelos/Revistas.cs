@@ -9,15 +9,23 @@ namespace AppGestionEditorial.Modelos
     {
 
     #region "Atributos"
-        private int articulos;
-       
+
+        private int nVolumen;
+        private int nArticulos;
+        
         #endregion
 
         #region "Propiedades"
-        public int Articulos
+
+        public int NVolumen
         {
-            get { return articulos; }
-            set { articulos = value; }
+            get { return nVolumen; }
+            set { nVolumen = value; }
+        }
+        public int NArticulos
+        {
+            get { return nArticulos; }
+            set { nArticulos = value; }
         } 
         #endregion
 
@@ -25,13 +33,16 @@ namespace AppGestionEditorial.Modelos
         
         public Revistas(): base()
         {
-            this.articulos = 1;
+            this.nVolumen = 1;
+            this.nArticulos = 1;
         }
+         public Revistas(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, DateTime fechaedicion, DateTime fechapublicacion, int nVolumen,int nArticulos)
+            : base( id, titulo , autores, idiomas,editorial,categoria, numeropaginas, fechaedicion, fechapublicacion)
 
-        public Revistas(string titulo, string autores, string editorial, string fechaDePublicacion, int articulos): 
-            base(titulo, autores, editorial, fechaDePublicacion)
+        
         {
-            this.articulos = articulos;
+            this.nVolumen = nVolumen;
+            this.nArticulos = nArticulos;
         }
         #endregion
 
@@ -39,7 +50,8 @@ namespace AppGestionEditorial.Modelos
         public override string ToString()
         {
             return base.ToString() +
-                "\n Articulos: " + this.articulos;
+                "\nNumero de volumenes: " + this.nVolumen +
+                "\n Articulos: " + this.nArticulos;
         }
 
         public override bool Equals(object obj)
@@ -48,7 +60,8 @@ namespace AppGestionEditorial.Modelos
             bool result = false;
 
             if ((base.Equals(doc)) &&
-                (this.articulos == doc.articulos))
+                (this.nVolumen == doc.nVolumen) &&
+                (this.nArticulos == doc.nArticulos))
                 result = true;
             return result;
         }

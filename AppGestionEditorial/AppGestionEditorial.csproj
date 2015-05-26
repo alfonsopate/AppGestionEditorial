@@ -78,6 +78,8 @@
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
+    <Content Include="Web\RegisroDocumento.aspx" />
+    <Content Include="Web\RegistroCliente.aspx" />
     <Content Include="Web\Site1.Master" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +95,20 @@
     <Compile Include="Modelos\Pdf.cs" />
     <Compile Include="Modelos\Revistas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\RegisroDocumento.aspx.cs">
+      <DependentUpon>RegisroDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\RegisroDocumento.aspx.designer.cs">
+      <DependentUpon>RegisroDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\RegistroCliente.aspx.cs">
+      <DependentUpon>RegistroCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\RegistroCliente.aspx.designer.cs">
+      <DependentUpon>RegistroCliente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Web\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace App.Web {
+namespace AppGestionEditorial.Web {
     
     
     public partial class Default {

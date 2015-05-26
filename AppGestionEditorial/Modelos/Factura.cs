@@ -86,13 +86,10 @@ namespace AppGestionEditorial.Modelos
                                "\nFecha: " + this.fecha +
                                "\nItem: " + this.item +
                                 "\nSucursal: " + this.sucursal +
-                                 "\nEstado: " + this.estado +
-                               "\n_______________________________________";
+                                 "\nEstado: " + this.estado;
+                              
         }
-        public override int GetHashCode()
-        {
-            return this.ToString().GetHashCode();
-        }
+        
         public override bool Equals(object obj)
         {
             Factura o = (Factura)obj;
@@ -104,6 +101,10 @@ namespace AppGestionEditorial.Modelos
                 result = true;
 
             return result;
+        }
+        public override int GetHashCode()
+        {
+            return this.ToString().GetHashCode();
         }
         #endregion
 

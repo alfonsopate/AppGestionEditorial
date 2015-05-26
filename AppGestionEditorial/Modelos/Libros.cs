@@ -41,7 +41,7 @@ namespace AppGestionEditorial.Modelos
             this.nivel = "nivel";
         }
 
-        public Libros(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, DateTime fechaedicion, DateTime fechapublicacion, int capitulos, int nuEdicion, string nivel)
+        public Libros(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, string fechaedicion, string fechapublicacion, int capitulos, int nuEdicion, string nivel)
             : base( id, titulo , autores, idiomas,editorial,categoria, numeropaginas, fechaedicion, fechapublicacion)
         {
             this.capitulos = capitulos;

@@ -28,7 +28,7 @@ namespace AppGestionEditorial.Modelos
             this.tipo = 1;
         }
 
-         public Cientificos(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, DateTime fechaedicion, DateTime fechapublicacion, int tipo)
+         public Cientificos(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, string fechaedicion, string fechapublicacion, int tipo)
             : base( id, titulo , autores, idiomas,editorial,categoria, numeropaginas, fechaedicion, fechapublicacion)
         {
             this.tipo = tipo;

@@ -81,9 +81,7 @@
     <Content Include="Web\Site1.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datos\CientificosRepositorios.cs" />
-    <Compile Include="Datos\LibrosRepositorios.cs" />
-    <Compile Include="Datos\RevistasRepositorios.cs" />
+    <Compile Include="Datos\EditorialRepositories.cs" />
     <Compile Include="Modelos\Cientificos.cs" />
     <Compile Include="Modelos\Cliente.cs" />
     <Compile Include="Modelos\Documentos.cs" />

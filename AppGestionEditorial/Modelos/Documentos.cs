@@ -16,8 +16,8 @@ namespace AppGestionEditorial.Modelos
         private string editorial;
         private string categoria;
         private int numeroPaginas;
-        private DateTime fechaEdicion;
-        private DateTime fechaPublicacion;
+        private string fechaEdicion;
+        private string fechaPublicacion;
         #endregion
 
         #region "Atributos"
@@ -57,13 +57,13 @@ namespace AppGestionEditorial.Modelos
             get { return numeroPaginas; }
             set { numeroPaginas = value; }
         }
-        public DateTime FechaEdicion
+        public string FechaEdicion
         {
             get { return fechaEdicion; }
             set { fechaEdicion = value; }
         }
 
-        public DateTime FechaPublicacion
+        public string FechaPublicacion
         {
             get { return fechaPublicacion; }
             set { fechaPublicacion = value; }
@@ -80,14 +80,14 @@ namespace AppGestionEditorial.Modelos
             this.editorial = "Editorial";
             this.categoria = "Categoria";
             this.numeroPaginas = 00 ;
-            this.fechaEdicion = 00/00/0000;
+            this.fechaEdicion =" 00/00/0000 ";
             this.fechaPublicacion = "dd/mm/aaaa";
             
 
         }
 
         public Documentos(string id, string titulo, string autores, string idiomas, string editorial, string categoria,
-            int numeroPaginas, DateTime fechaEdicion, DateTime fechaPublicacion)
+            int numeroPaginas, string fechaEdicion, string fechaPublicacion)
         {
             this.id = id;
             this.titulo = titulo ;

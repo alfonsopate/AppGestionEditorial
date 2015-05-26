@@ -36,7 +36,7 @@ namespace AppGestionEditorial.Modelos
             this.nVolumen = 1;
             this.nArticulos = 1;
         }
-         public Revistas(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, DateTime fechaedicion, DateTime fechapublicacion, int nVolumen,int nArticulos)
+         public Revistas(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, string fechaedicion, string fechapublicacion, int nVolumen,int nArticulos)
             : base( id, titulo , autores, idiomas,editorial,categoria, numeropaginas, fechaedicion, fechapublicacion)
 
         

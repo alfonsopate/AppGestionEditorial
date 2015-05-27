@@ -61,6 +61,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Datos\Factura.xml" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
     <Content Include="packages.config" />
@@ -89,10 +90,8 @@
     <Compile Include="Modelos\Documentos.cs" />
     <Compile Include="Modelos\Factura.cs" />
     <Compile Include="Modelos\Formato.cs" />
-    <Compile Include="Modelos\Impreso.cs" />
+    <Compile Include="Modelos\IPermisos.cs" />
     <Compile Include="Modelos\Libros.cs" />
-    <Compile Include="Modelos\Online.cs" />
-    <Compile Include="Modelos\Pdf.cs" />
     <Compile Include="Modelos\Revistas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web\RegisroDocumento.aspx.cs">

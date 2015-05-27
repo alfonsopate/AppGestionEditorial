@@ -36,18 +36,19 @@ namespace AppGestionEditorial.Modelos
         
         public Libros(): base()
         {
-            this.capitulos = 2;
-            this.nuEdicion =2;
+            this.capitulos = 0;
+            this.nuEdicion = 0 ;
             this.nivel = "nivel";
         }
 
-        public Libros(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, string fechaedicion, string fechapublicacion, int capitulos, int nuEdicion, string nivel)
-            : base( id, titulo , autores, idiomas,editorial,categoria, numeropaginas, fechaedicion, fechapublicacion)
+        public Libros(string codigo, string titulo, int nAutores, string[] autores, int nIdioma, string[] idioma, string editorial,
+            string categoria, int nPaginas, string fEdicion, string fPublicacion, int capitulos, int nuEdicion, string nivel)
+            : base(codigo, titulo, nAutores, autores, nIdioma, idioma, editorial,
+            categoria, nPaginas, fEdicion, fPublicacion)
         {
             this.capitulos = capitulos;
             this.nuEdicion = nuEdicion;
             this.nivel = nivel;
-
         }
         #endregion
 

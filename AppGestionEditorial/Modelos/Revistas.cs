@@ -33,13 +33,13 @@ namespace AppGestionEditorial.Modelos
         
         public Revistas(): base()
         {
-            this.nVolumen = 1;
-            this.nArticulos = 1;
+            this.nVolumen = 0;
+            this.nArticulos = 0;
         }
-         public Revistas(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, string fechaedicion, string fechapublicacion, int nVolumen,int nArticulos)
-            : base( id, titulo , autores, idiomas,editorial,categoria, numeropaginas, fechaedicion, fechapublicacion)
-
-        
+        public Revistas(string codigo, string titulo, int nAutores, string[] autores, int nIdioma, string[] idioma, string editorial,
+           string categoria, int nPaginas, string fEdicion, string fPublicacion,int nArticulos, int nVolumen)
+            : base(codigo, titulo, nAutores, autores, nIdioma, idioma, editorial,
+            categoria, nPaginas, fEdicion, fPublicacion)
         {
             this.nVolumen = nVolumen;
             this.nArticulos = nArticulos;

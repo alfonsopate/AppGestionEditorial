@@ -5,7 +5,7 @@ using System.Web;
 
 namespace AppGestionEditorial.Modelos
 {
-    public class Impreso:Formato
+    public class IPermisos
     {
     }
 }

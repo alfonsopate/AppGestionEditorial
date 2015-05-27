@@ -9,12 +9,12 @@ namespace AppGestionEditorial.Modelos
 
     {
    #region "Atributos"
-        private int tipo;
+        private string tipo;
        
         #endregion
 
         #region "Propiedades"
-        public int Tipo
+        public string Tipo
         {
             get { return tipo; }
             set { tipo = value; }
@@ -25,11 +25,13 @@ namespace AppGestionEditorial.Modelos
         
         public Cientificos(): base()
         {
-            this.tipo = 1;
+            this.tipo = "";
         }
 
-         public Cientificos(string id, string titulo, string autores, string idiomas, string editorial, string categoria, int numeropaginas, string fechaedicion, string fechapublicacion, int tipo)
-            : base( id, titulo , autores, idiomas,editorial,categoria, numeropaginas, fechaedicion, fechapublicacion)
+        public Cientificos(string codigo, string titulo, int nAutores, string[] autores, int nIdioma, string[] idioma, string editorial,
+           string categoria, int nPaginas, string fEdicion, string fPublicacion, string tipo)
+            : base(codigo, titulo, nAutores, autores, nIdioma, idioma, editorial,
+            categoria, nPaginas, fEdicion, fPublicacion)
         {
             this.tipo = tipo;
         }

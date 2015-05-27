@@ -11,13 +11,17 @@ namespace AppGestionEditorial.Modelos
         #region "Atributos"
         private string id;
         private string titulo;
-        private string autores;
-        private string idiomas;
+        private int nAutores;
+        private string[] autores;
+        private int nIdiomas;
+        private string[] idiomas;
         private string editorial;
         private string categoria;
         private int numeroPaginas;
         private string fechaEdicion;
         private string fechaPublicacion;
+
+       // private static List<Formato> = new List<Formato>;
         #endregion
 
         #region "Atributos"
@@ -32,12 +36,23 @@ namespace AppGestionEditorial.Modelos
             get { return titulo; }
             set { titulo = value; }
         }    
-        public string Autores
+        public int NAutores
+        {
+            get { return nAutores; }
+            set { nAutores = value; }
+        }
+        public string[] Autores
         {
             get { return autores; }
             set { autores = value; }
         }
-        public string Idiomas
+        public int NIdiomas
+        {
+            get { return nIdiomas; }
+            set { nIdiomas = value; }
+        }
+
+        public string[] Idiomas
         {
             get { return idiomas; }
             set { idiomas = value; }
@@ -75,8 +90,6 @@ namespace AppGestionEditorial.Modelos
         {
             this.id = "xxxxx";
             this.titulo = "Titulo del Documento";
-            this.autores = "Autores";
-            this.idiomas = "Idiomas";
             this.editorial = "Editorial";
             this.categoria = "Categoria";
             this.numeroPaginas = 00 ;
@@ -86,18 +99,27 @@ namespace AppGestionEditorial.Modelos
 
         }
 
-        public Documentos(string id, string titulo, string autores, string idiomas, string editorial, string categoria,
+        public Documentos(string id, string titulo,int nAutores, string []autores,int nIdiomas ,string []idiomas, string editorial, string categoria,
             int numeroPaginas, string fechaEdicion, string fechaPublicacion)
         {
             this.id = id;
             this.titulo = titulo ;
-            this.autores = autores;
-            this.idiomas = idiomas;
             this.editorial = editorial;
             this.categoria = categoria;
             this.numeroPaginas = numeroPaginas;
             this.fechaEdicion = fechaEdicion;
             this.fechaPublicacion = fechaPublicacion;
+            this.nAutores=nAutores;
+            this.nIdiomas=nIdiomas;
+
+            for (int i = 0; i < nIdiomas;i++ ) 
+            {
+                this.idiomas[i] = idiomas[i];
+            }
+            for (int i = 0; i < nAutores; i++)
+            {
+                this.autores[i] = autores[i];
+            }
         }
         #endregion 
 
@@ -123,8 +145,8 @@ namespace AppGestionEditorial.Modelos
 
             if ((this.id == doc.id)&&
                 (this.titulo == doc.titulo) &&
-                (this.autores == doc.autores) &&
-                (this.idiomas == doc.idiomas) &&
+                (this.nAutores == doc.nAutores) &&
+                (this.nIdiomas == doc.nIdiomas) &&
                 (this.editorial == doc.editorial) &&
                 (this.categoria == doc.categoria) &&
                 (this.numeroPaginas == doc.numeroPaginas) &&

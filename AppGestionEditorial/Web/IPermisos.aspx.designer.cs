@@ -10,16 +10,16 @@
 namespace AppGestionEditorial.Web {
     
     
-    public partial class RegisroDocumento {
+    public partial class IPublicaciones {
         
         /// <summary>
-        /// Control textcodigo.
+        /// Control form1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textcodigo;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// Control type.
@@ -31,130 +31,148 @@ namespace AppGestionEditorial.Web {
         protected global::System.Web.UI.WebControls.DropDownList type;
         
         /// <summary>
-        /// Control Texttitulo.
+        /// Control txtcodigo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Texttitulo;
+        protected global::System.Web.UI.WebControls.TextBox txtcodigo;
         
         /// <summary>
-        /// Control Textautores.
+        /// Control txttitulo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textautores;
+        protected global::System.Web.UI.WebControls.TextBox txttitulo;
         
         /// <summary>
-        /// Control Textidiomas.
+        /// Control txteditorial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textidiomas;
+        protected global::System.Web.UI.WebControls.TextBox txteditorial;
         
         /// <summary>
-        /// Control Texteditorial.
+        /// Control txtedicion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Texteditorial;
+        protected global::System.Web.UI.WebControls.TextBox txtedicion;
         
         /// <summary>
-        /// Control Textcategoria.
+        /// Control txtautores.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textcategoria;
+        protected global::System.Web.UI.WebControls.TextBox txtautores;
         
         /// <summary>
-        /// Control Textnumpaginas.
+        /// Control txtidiomas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textnumpaginas;
+        protected global::System.Web.UI.WebControls.TextBox txtidiomas;
         
         /// <summary>
-        /// Control Textfechaedicion.
+        /// Control txtcategorias.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textfechaedicion;
+        protected global::System.Web.UI.WebControls.TextBox txtcategorias;
         
         /// <summary>
-        /// Control Textfechapublicacion.
+        /// Control txtnumeropaginas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textfechapublicacion;
+        protected global::System.Web.UI.WebControls.TextBox txtnumeropaginas;
         
         /// <summary>
-        /// Control Textnumcapitulos.
+        /// Control txtfechapublicacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textnumcapitulos;
+        protected global::System.Web.UI.WebControls.TextBox txtfechapublicacion;
         
         /// <summary>
-        /// Control Textnumtomas.
+        /// Control txtfechaedicion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textnumtomas;
+        protected global::System.Web.UI.WebControls.TextBox txtfechaedicion;
         
         /// <summary>
-        /// Control Textnivel.
+        /// Control txtnumeroarticulos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textnivel;
+        protected global::System.Web.UI.WebControls.TextBox txtnumeroarticulos;
         
         /// <summary>
-        /// Control Textnumvolumenes.
+        /// Control txtnumerovolumenes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textnumvolumenes;
+        protected global::System.Web.UI.WebControls.TextBox txtnumerovolumenes;
         
         /// <summary>
-        /// Control Textnumarticulos.
+        /// Control txtnumerotomos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textnumarticulos;
+        protected global::System.Web.UI.WebControls.TextBox txtnumerotomos;
         
         /// <summary>
-        /// Control Texttipo.
+        /// Control txtnumerocapitulos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Texttipo;
+        protected global::System.Web.UI.WebControls.TextBox txtnumerocapitulos;
+        
+        /// <summary>
+        /// Control txtnivel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtnivel;
+        
+        /// <summary>
+        /// Control txttipos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txttipos;
         
         /// <summary>
         /// Control btnGuardar.
